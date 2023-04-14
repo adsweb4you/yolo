@@ -1,0 +1,57 @@
+@media (max-width:1400px){
+    .products .prodcard .options {
+        padding: 13px 10px;
+    }
+
+    .products .prodcard .cardbody .bywith button {
+        padding: 13px 4px;
+    }
+}
+
+@media (max-width:1200px){
+    .banners{
+        width: 23% !important;
+    }
+    .logosec{
+        width: 17% !important;
+    }
+ 
+    .navbar-nav{
+        width: 60% !important;
+    }
+
+    .products .prodcard .options .item p {
+        font-size: 9px;
+    }
+    .products .prodcard .cardbody .bywith button {
+        font-size: 10px;
+    }
+   
+}
+@media (max-width:800px){
+    .price + p {
+        display: none;
+    }
+
+    .bywith{
+        display: block !important;
+        button{
+            margin-top: 12px !important;
+            width: 100% !important;
+        }
+    }
+
+    .newl {
+        padding: 15px 15px;
+        margin:0 15px ;
+        h4{
+        font-size: 12px;
+    }
+}
+.fotheader{
+    margin-top: 30px;
+    a{
+        text-align: center;
+    }
+}
+}
