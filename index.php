@@ -16,7 +16,12 @@ include "nav.php";
 ?>
 <header>
 <div class="container">
-  <form class="search">
+
+<button class="showform d-block d-lg-none w-100">ფილტრაცია</button>
+
+
+
+  <form class="search d-none d-lg-block">
     <div class="row">
     <div class="col-lg-2 col-sm-6 mb-lg-0 mb-3">
         <select name="" id="" class="form-control">
@@ -94,13 +99,29 @@ include "nav.php";
                 </p>
 
                 <div class="options">
-                   <div class="item">
+                   <div class="parcs item">
                    <p class="price">250 ₾</p>
-                   <p>1 პერსონა</p>
-                   <p>1 პერსონა</p>
-                   <p> 2 საათი</p>
-                   <p> <i class="bi bi-chevron-down"></i> </p>
+                   <p class="changs pers">1 პერსონა</p>
+                   <p class="changs coun">1 პერსონა</p>
+                   <p class="changs time">2 საათი</p>
                    </div>
+                   <p class="changs mb-0"> <i class="changs bi bi-chevron-down"></i> </p>
+
+                   <div class="moreops">
+                   <div class="item dropeds">
+                   <p class="price">250 ₾</p>
+                   <p>2 პერსონა</p>
+                   <p>3 პერსონა</p>
+                   <p>4 საათი</p>
+                   </div>
+                   <div class="item dropeds">
+                   <p class="price">250 ₾</p>
+                   <p>5 პერსონა</p>
+                   <p>6 პერსონა</p>
+                   <p>72 საათი</p>
+                   </div>
+                   </div>
+
                 </div>
 
                 <div class="bywith">
@@ -114,11 +135,12 @@ include "nav.php";
         </div>
         <div class="col-lg-4 col-sm-6">
             <div class="prodcard">
-            <div class="hoverable">
+                <div class="hoverable">
                     <span class="wish"><i class="bi bi-heart-fill"></i></span>
                    <img src="img/product.jpg" class="img-fluid" alt="">
                    <img src="img/effect.png" class="imghov" alt="">
                 </div> 
+              
                 <div class="cardbody">
                       <h2>ალავერდი • ALAVERDI</h2>
                 <p>ქართული სუფრა 12 სტუმარზე!  სასიამოვნო გარემო
@@ -128,13 +150,29 @@ include "nav.php";
                 </p>
 
                 <div class="options">
-                   <div class="item">
+                   <div class="parcs item">
                    <p class="price">250 ₾</p>
-                   <p>1 პერსონა</p>
-                   <p>1 პერსონა</p>
-                   <p> 2 საათი</p>
-                   <p> <i class="bi bi-chevron-down"></i> </p>
+                   <p class="changs pers">1 პერსონა</p>
+                   <p class="changs coun">1 პერსონა</p>
+                   <p class="changs time">2 საათი</p>
                    </div>
+                   <p class="changs mb-0"> <i class="changs bi bi-chevron-down"></i> </p>
+
+                   <div class="moreops">
+                   <div class="item dropeds">
+                   <p class="price">250 ₾</p>
+                   <p>2 პერსონა</p>
+                   <p>3 პერსონა</p>
+                   <p>4 საათი</p>
+                   </div>
+                   <div class="item dropeds">
+                   <p class="price">250 ₾</p>
+                   <p>5 პერსონა</p>
+                   <p>6 პერსონა</p>
+                   <p>72 საათი</p>
+                   </div>
+                   </div>
+
                 </div>
 
                 <div class="bywith">
@@ -397,7 +435,7 @@ include "nav.php";
         TOP - <span >10</span>  ღონისძიება
         </h1>
          </div>
-         <div class="col-lg-6 col-sm-6 d-flex align-item-center justify-content-end">
+         <div class="col-lg-6 col-sm-6 d-flex align-item-center mb-3 mb-sm-0 justify-content-start justify-content-sm-end">
             <button class="bt-left"><i class="bi bi-chevron-left"></i></button>
             <button class="bt-right"><i class="bi bi-chevron-right"></i></button>
          </div>

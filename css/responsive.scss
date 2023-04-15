@@ -1,4 +1,4 @@
-@media (max-width:1400px){
+@media (max-width:1400px) {
     .products .prodcard .options {
         padding: 13px 10px;
     }
@@ -8,34 +8,179 @@
     }
 }
 
-@media (max-width:1200px){
-    .banners{
+@media (max-width:1200px) {
+    .banners {
         width: 23% !important;
     }
-    .logosec{
+
+    .logosec {
         width: 17% !important;
     }
- 
-    .navbar-nav{
+
+    .navbar-nav {
         width: 60% !important;
     }
 
     .products .prodcard .options .item p {
         font-size: 9px;
     }
+
     .products .prodcard .cardbody .bywith button {
         font-size: 10px;
     }
-   
+
 }
-@media (max-width:800px){
-    .price + p {
+
+
+@media (max-width:992px) {
+
+   
+    .mobbar{
+        display: flex;
+    }
+
+    .search {
+        select{
+            border-radius: 8px;
+            padding: 13px;
+            border: 1px solid rgba(9, 86, 71, 0.1176470588);
+        }
+    }
+
+    .banners,
+    .navbar-nav,
+    .rightnav {
+        display: none !important;
+    }
+
+    .logosec {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .openmenu {
+            display: flex;
+            border: 0;
+            background-color: rgba(255, 79, 44, 0.3411764706);
+            color: #FF4F2C;
+            font-size: 34px;
+            border-radius: 7px;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            position: relative;
+            top: 0;
+        }
+
+    }
+
+    .navbar {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background-color: #10111017;
+        box-shadow: 4px 7px 9px #09040426;
+    }
+
+
+    .mobnavbar {
+        transition: all .6s ease-in-out;
+        transform: translateX(-100%);
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+       
+        background-color: #fff;
+        font-family: Got;
+        font-weight: bold;
+        width: 100vw;
+        z-index: 99999;
+
+        &.show{
+            transform: translateX(0);
+        }
+
+        .indexpage{
+            display: flex;
+            a{
+                padding: 10px 15px 13px 15px;
+                color: #fff;
+                text-align: center;
+                &:first-child{
+                    width: 50%;
+                    background-color: #095646;
+                }
+                &:last-child{
+                    width: 50%;
+                    background-color: #FF4F2C
+                }
+            }
+        }
+
+        .morepage {
+            padding: 20px;
+            margin-top: 30px;
+            a {
+                display: block;
+                padding: 9px 0;
+                color: #525454;
+            }
+        }
+    }
+
+    .langs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        gap: 15px;
+        a{
+            padding: 18px;
+            width: 33.3333%;
+            background-color: #ccc;
+            color: #009688;
+            text-align: center;
+            border-radius: 4px;
+        }
+    }
+
+    .products .row {
+        --bs-gutter-x: initial;
+    }
+
+    .close{
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 50%;
+        background: #ff00003b;
+        color: red;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4%;
+    }
+
+}
+
+@media (max-width:800px) {
+    .price+p {
         display: none;
     }
 
-    .bywith{
+    .bywith {
         display: block !important;
-        button{
+
+        button {
             margin-top: 12px !important;
             width: 100% !important;
         }
@@ -43,15 +188,18 @@
 
     .newl {
         padding: 15px 15px;
-        margin:0 15px ;
-        h4{
-        font-size: 12px;
+        margin: 0 15px;
+
+        h4 {
+            font-size: 12px;
+        }
     }
-}
-.fotheader{
-    margin-top: 30px;
-    a{
-        text-align: center;
+
+    .fotheader {
+        margin-top: 30px;
+
+        a {
+            text-align: center;
+        }
     }
-}
 }
