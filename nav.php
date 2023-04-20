@@ -1,26 +1,13 @@
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg sticky-top bg-white">
   <div class="container ">
     <div class="logosec">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.php">
         <img src="img/logo.png" class="logo" alt="">
     </a>
     <button class="openmenu"><i class="bi bi-list"></i></button>
     </div>
     <div class="banners d-flex">
-          <ul class="togglemenu">
-    <li class="nav-item menu">
-          <button class="btn menus  "  data-bs-toggle="dropdown">
-          <i class="bi bi-list"></i>
-          </button>
-          <ul class="dropdown-menu">
-    <li> <a class="dropdown-item"  href="">YOLO-ს შესახებ</a> </li>
-    <li> <a class="dropdown-item"  href="">მიტანის პირობები</a> </li>
-    <li> <a class="dropdown-item"  href="">წესები & პირობები</a> </li>
-    <li> <a class="dropdown-item"  href="">კონტაქტი</a> </li>
-    <li> <a class="dropdown-item"  href="">სიახლეები</a> </li>
-  </ul>
-        </li>
-    </ul>
+ 
         <ul class="switch">
             <li><a href="">შთაბეჭდილებები</a> </li>
             <li><a href="">აფიშა</a> </li>
@@ -30,7 +17,21 @@
       <ul class="navbar-nav">
         <li class="nav-item d-flex align-items-center profile">
           <a class="nav-link"   href="#">  აქტივაცია</a>
-          <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> პროფილი</a>
+          <ul class="togglemenu">
+    <li class="nav-item menu">
+          <button class="btn menus  "  data-bs-toggle="dropdown">
+          <i class="bi bi-list"></i>
+          </button>
+          <ul class="dropdown-menu">
+    <li> <a class="dropdown-item"  href="">YOLO-ს შესახებ</a> </li>
+    <li> <a class="dropdown-item"  href="">მიტანის პირობები</a> </li>
+    <li> <a class="dropdown-item"  href="">წესები & პირობები</a> </li>
+    <li> <a class="dropdown-item"  href="contact.php">კონტაქტი</a> </li>
+    <li> <a class="dropdown-item"  href="">სიახლეები</a> </li>
+  </ul>
+        </li>
+    </ul>
+          <a class="nav-link" href="user.php"><i class="bi bi-person-fill"></i> პროფილი</a>
         </li>
       
         <li class="nav-item catblock">
@@ -101,7 +102,7 @@
     <a href="">YOLO-ს შესახებ</a>
     <a href="">მიტანის პირობები</a>
     <a href="">წესები & პირობები</a>
-    <a href="">კონტაქტი</a>
+    <a href="contact.php">კონტაქტი</a>
     <a href="">სიახლეები</a>
   </div>
   <div class="langs">

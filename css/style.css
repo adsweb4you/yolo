@@ -7,8 +7,16 @@
   src: url("../fonts/gl-kirovi-bold.ttf");
 }
 .navbar {
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  transition: all 0.3s linear;
+  z-index: 889;
+}
+.navbar.scrol {
+  padding-bottom: 20px;
+}
+.navbar.scrol .logo {
+  width: 96px;
 }
 .navbar .logosec,
 .navbar .banners,
@@ -24,6 +32,7 @@ a {
 }
 
 .logo {
+  transition: all 0.3s linear;
   width: 110px;
   object-fit: contain;
   position: absolute;
@@ -43,14 +52,16 @@ a {
   font-family: Got;
   font-weight: bold;
   color: #FFFFFF;
-  padding: 18px 35px;
+  padding: 18px 25px;
+  text-align: center;
+  min-width: 165px;
 }
 .switch li:first-child {
-  border-radius: 0 0 0 20px;
+  border-radius: 14px 0 0 14px;
   background-color: #FF4F2C;
 }
 .switch li:last-child {
-  border-radius: 0 0 20px 0;
+  border-radius: 0 20px 20px 0;
   background-color: #095646;
 }
 
@@ -103,10 +114,10 @@ a {
 
 .menus {
   position: relative;
-  top: 5px;
+  top: -1px;
   padding: 0;
   font-size: 22px;
-  margin-right: 13px;
+  margin: 0 13px;
 }
 .menus.show {
   border: 1px solid !important;
@@ -136,6 +147,7 @@ a {
   font-weight: bold;
   font-size: 13px;
   color: rgba(5, 7, 7, 0.6901960784);
+  padding: 9px 18px;
 }
 
 .carts {
@@ -738,6 +750,339 @@ footer .minh {
   transform: translateX(39%);
 }
 
+.mini-header {
+  padding: 40px 0 30px 0;
+}
+.mini-header ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Got;
+  font-weight: bold;
+}
+.mini-header ul li a {
+  color: #1E0A0A;
+}
+.mini-header ul li.active {
+  color: #FF4F2C;
+}
+
+.contacts {
+  background-color: rgba(201, 201, 201, 0.1215686275);
+  padding: 50px 0;
+}
+.contacts .contcard {
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 25px;
+  font-family: Got;
+  gap: 35px;
+  font-weight: bold;
+}
+.contacts .contcard .icons {
+  width: 20%;
+}
+.contacts .contcard .texts {
+  width: 80%;
+}
+.contacts .contcard p {
+  color: #FF4F2C;
+  font-size: 18px;
+}
+.contacts .contcard i {
+  color: #FF4F2C;
+  width: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  background-color: #F8F8F8;
+}
+
+.base-form {
+  border-radius: 12px;
+  font-family: Got;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 40px;
+}
+.base-form .doted {
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px dashed #095646;
+}
+.base-form .doted .send {
+  margin: 30px auto;
+}
+.base-form input, .base-form textarea, .base-form select {
+  margin-bottom: 30px;
+  background-color: #F5F5F5;
+  border: 0;
+}
+.base-form input ::placeholder, .base-form textarea ::placeholder, .base-form select ::placeholder {
+  font-family: Got;
+  font-size: 11px;
+  font-weight: bold;
+  color: #707070;
+}
+.base-form input, .base-form select, .base-form textarea {
+  min-height: 70px;
+  border-radius: 3px;
+  padding: 13px 38px;
+}
+.base-form h4 {
+  font-weight: bold;
+  font-size: 21px;
+  color: #1B3C35;
+  margin-bottom: 35px;
+}
+.base-form button {
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  padding: 13px 38px;
+  font-family: Got;
+  font-size: 18px;
+  font-weight: bold;
+}
+.base-form button.send {
+  background-color: #36BB2C;
+  display: block;
+  margin: 50px auto;
+}
+.base-form button.save-user {
+  background-color: #FF4F2C;
+}
+
+.useraside {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+.useraside .userinfo {
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+}
+.useraside .userinfo .ic {
+  width: 30%;
+}
+.useraside .userinfo .ic i {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(201, 201, 201, 0.4431372549);
+  border-radius: 50%;
+  color: #FF4F2C;
+  width: 64px;
+  height: 64px;
+}
+.useraside .userinfo .names {
+  width: 70%;
+}
+.useraside .userinfo .names p {
+  font-family: Got;
+  font-size: 18px;
+  color: #1E0A0A;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+.useraside .userinfo .names p::first-line {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+.useraside .usermenus {
+  margin-top: 50px;
+}
+.useraside .usermenus ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.useraside .usermenus ul li {
+  border-left: 2px solid transparent;
+  transition: all 0.6s linear;
+  padding: 11px 50px 14px;
+}
+.useraside .usermenus ul li:first-child {
+  border-left: 2px solid #095646;
+}
+.useraside .usermenus ul li:hover {
+  border-left: 2px solid #095646;
+}
+.useraside .usermenus ul li i {
+  margin-right: 25px;
+  font-size: 18px;
+  color: #707070;
+  position: relative;
+  top: 3px;
+}
+.useraside .usermenus ul li a {
+  font-family: Got;
+  color: rgba(32, 61, 55, 0.8666666667);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#bd i {
+  position: absolute;
+  right: 30px;
+  top: 24%;
+}
+
+.auth-sec {
+  border-radius: 12px;
+  font-family: Got;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 40px;
+}
+.auth-sec h4 {
+  font-weight: bold;
+  font-size: 21px;
+  color: #1B3C35;
+  margin-bottom: 35px;
+}
+
+.myorders {
+  border: 1px solid rgba(201, 201, 201, 0.28);
+  border-radius: 3px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.myorders:hover {
+  border-left: 4px solid #095646;
+}
+.myorders h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Got;
+  color: #1B3C35;
+}
+.myorders p {
+  font-family: Got;
+  font-weight: bold;
+  color: #1B3C35;
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.myorders p.status.succ {
+  color: rgb(41, 154, 41);
+}
+
+.addrow {
+  padding: 40px;
+  border-top: 1px dashed rgba(204, 204, 204, 0.3411764706);
+}
+
+.user-addr {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 22px;
+  border: 1px solid rgba(201, 201, 201, 0.2);
+  border-radius: 7px;
+  min-height: 88px;
+}
+.user-addr p {
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.6;
+  font-family: Got;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.user-addr .edit {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background-color: rgba(139, 195, 74, 0.4588235294);
+  color: #4CAF50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 11px;
+}
+.user-addr .addtrash {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.user-addr .addtrash button {
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  color: red;
+  transform: scale(0);
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 201, 201, 0.2);
+  border-radius: 50%;
+}
+.user-addr:hover button {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.costumcheck label {
+  width: 100%;
+  background-color: #F5F5F5;
+  height: 43px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+  position: relative;
+  color: #707070;
+  padding-right: 14px;
+}
+.costumcheck label .ball {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(96, 125, 139, 0.3019607843);
+  border-radius: 50%;
+}
+.costumcheck label .borders {
+  position: absolute;
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  display: block;
+}
+.costumcheck label input:checked ~ .ball {
+  border: 1px solid rgba(255, 0, 0, 0);
+  background-color: #FF4F2C;
+}
+.costumcheck label input:checked ~ .borders {
+  border: 1px solid #FF4F2C;
+}
+
 @media (max-width: 1400px) {
   .products .prodcard .options {
     padding: 13px 10px;
@@ -745,6 +1090,14 @@ footer .minh {
 
   .products .prodcard .cardbody .bywith button {
     padding: 13px 4px;
+  }
+
+  .logosec {
+    width: 20% !important;
+  }
+
+  .navbar-nav {
+    width: 47% !important;
   }
 }
 @media (max-width: 1200px) {

@@ -1,5 +1,12 @@
  $(function () {
     
+    $(window).on("scroll  load", function () { 
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass('scrol')
+        }else{
+            $('.navbar').removeClass('scrol')
+        }
+    });
 
     $('.openmenu, .close').click(function (e) { 
         e.preventDefault();
@@ -41,7 +48,7 @@
     });
 
     $(document).click(function (e) { 
-        e.preventDefault();
+      //  e.preventDefault();
         let eclass = e.target.classList[0];
         
         if (eclass !== 'options' &&     eclass !== 'parcs' &&  eclass !== 'price' &&  eclass !== 'changs') {
@@ -49,6 +56,14 @@
               $('i.changs').removeClass('bi-chevron-up')
         }
  
+    });
+
+    $('.edit').click(function (e) { 
+        e.preventDefault();
+        let value = $(this).parent().find('p').text();
+        let updtxt = $(this).data('title');
+        $('[name="useraddr"]').val(value);
+        $('.save-user').text(updtxt)
     });
 
  });
