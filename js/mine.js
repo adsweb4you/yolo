@@ -66,4 +66,16 @@
         $('.save-user').text(updtxt)
     });
 
+    $('.openreg').click(function (e) { 
+        e.preventDefault();
+        $('.modal-content.login').addClass('d-none');
+        $('.modal-content.register').removeClass('d-none');
+    });
+
+    $('.openlogin').click(function (e) { 
+        e.preventDefault();
+        $('.modal-content.login').removeClass('d-none');
+        $('.modal-content.register').addClass('d-none');
+    });
+
  });

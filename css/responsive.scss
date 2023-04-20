@@ -158,7 +158,7 @@
     }
 
     .products .row {
-        --bs-gutter-x: initial;
+        --bs-gutter-x: inherit;
     }
 
     .close{
@@ -174,7 +174,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 4%;
+        bottom: 4vh;
     }
 
 }

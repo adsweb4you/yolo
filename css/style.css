@@ -250,7 +250,7 @@ a {
   color: #fff;
   font-size: 20px;
   position: absolute;
-  z-index: 8888;
+  z-index: 88;
   right: 21px;
   top: 12px;
 }
@@ -708,7 +708,7 @@ footer .minh {
   transform: translateX(-50%);
   padding: 13px;
   bottom: 1%;
-  z-index: 9999;
+  z-index: 888;
   box-shadow: 4px 7px 9px rgba(33, 25, 25, 0.3098039216);
   border-radius: 8px;
   background-color: #fff;
@@ -1083,6 +1083,127 @@ footer .minh {
   border: 1px solid #FF4F2C;
 }
 
+.regis {
+  padding: 0 25px;
+}
+.regis input {
+  border: 0;
+  border-radius: 7px;
+  font-family: Got;
+  font-weight: bold;
+  height: 65px;
+  background-color: #F5F5F5;
+  margin-bottom: 30px;
+}
+.regis input::placeholder {
+  font-family: Got;
+  font-weight: bold;
+}
+.regis button {
+  color: #fff;
+  background-color: #FF4F2C;
+  border-radius: 7px;
+  padding: 12px 22px;
+  font-family: Got;
+  font-weight: bold;
+  border: 0;
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.modal-body {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.modal-body::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 7px;
+}
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+  background: #FF4F2C;
+  border-radius: 7px;
+  border-radius: 7px;
+}
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #095646;
+}
+
+.dialog-header {
+  justify-content: space-between;
+  padding: 35px 0;
+  display: flex;
+}
+.dialog-header h6 {
+  font-family: Got;
+  font-weight: bold;
+  color: #095646;
+  font-size: 21px;
+  margin-bottom: 0;
+  padding: 15px 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.dialog-header h6::before {
+  content: "";
+  width: 5px;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FF4F2C;
+  border-radius: 0 7px 7px 0;
+}
+.dialog-header .btn-close {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(201, 201, 201, 0.1882352941);
+  border-radius: 50%;
+  opacity: 1;
+  margin-right: 30px;
+}
+
+.socialsign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 0 12px;
+}
+.socialsign.fb {
+  background-color: #2e89ff;
+}
+.socialsign.goo {
+  background-color: #e94235;
+}
+
+.openregister {
+  background-color: rgba(96, 125, 139, 0.1294117647);
+  padding: 25px;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+.openregister p {
+  font-family: Got;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.openregister button {
+  background-color: #095646 !important;
+}
+
 @media (max-width: 1400px) {
   .products .prodcard .options {
     padding: 13px 10px;
@@ -1228,7 +1349,7 @@ footer .minh {
   }
 
   .products .row {
-    --bs-gutter-x: initial;
+    --bs-gutter-x: inherit;
   }
 
   .close {
@@ -1244,7 +1365,7 @@ footer .minh {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: 4vh;
   }
 }
 @media (max-width: 800px) {
