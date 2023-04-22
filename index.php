@@ -21,7 +21,7 @@ include "nav.php";
 
 
 
-  <form class="search d-none d-lg-block">
+  <form class="search d-none d-lg-block" action="search.php">
     <div class="row">
     <div class="col-lg-2 col-sm-6 mb-lg-0 mb-3">
         <select name="" id="" class="form-control">
@@ -85,19 +85,22 @@ include "nav.php";
         <div class="col-lg-4 col-sm-6">
             <div class="prodcard">
                 <div class="hoverable">
+                <a href="detals.php"> 
                     <span class="wish"><i class="bi bi-heart-fill"></i></span>
                    <img src="img/product.jpg" class="img-fluid" alt="">
                    <img src="img/effect.png" class="imghov" alt="">
+                    </a>
                 </div> 
               
                 <div class="cardbody">
+                <a href="detals.php"> 
                       <h2>ალავერდი • ALAVERDI</h2>
                 <p>ქართული სუფრა 12 სტუმარზე!  სასიამოვნო გარემო
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 </p>
-
+</a>
                 <div class="options">
                    <div class="parcs item">
                    <p class="price">250 ₾</p>
@@ -187,18 +190,21 @@ include "nav.php";
         <div class="col-lg-4 col-sm-6">
             <div class="prodcard">
             <div class="hoverable">
+             <a href="detals.php"> 
                     <span class="wish"><i class="bi bi-heart-fill"></i></span>
                    <img src="img/product.jpg" class="img-fluid" alt="">
                    <img src="img/effect.png" class="imghov" alt="">
+</a>
                 </div> 
                 <div class="cardbody">
+                    <a href="detals.php"> 
                       <h2>ალავერდი • ALAVERDI</h2>
                 <p>ქართული სუფრა 12 სტუმარზე!  სასიამოვნო გარემო
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 უგემრიელესი  კერძები და ცოცხალი მუსიკა 
                 </p>
-
+                </a>
                 <div class="options">
                    <div class="item">
                    <p class="price">250 ₾</p>
@@ -448,7 +454,7 @@ include "nav.php";
       <div class="ban">
                 <img src="img/bans.webp" alt="">
                 <div class="banbody">
-                    <a href=""> 
+                    <a href="detapish.php"> 
                     <h3>ჩექმებიანი კატა კინოკავეა +</h3>
                     <p>ი. ბრამსი - საფორტეპიანო კონცერტი 
 ლ. ვ. ბეთჰოვენი - სიმფონია N3 
@@ -465,7 +471,7 @@ include "nav.php";
       <div class="ban">
                 <img src="img/bans.webp" alt="">
                 <div class="banbody">
-                    <a href=""> 
+                    <a href="detapish.php"> 
                     <h3>ჩექმებიანი კატა კინოკავეა +</h3>
                     <p>ი. ბრამსი - საფორტეპიანო კონცერტი 
 ლ. ვ. ბეთჰოვენი - სიმფონია N3 
@@ -482,7 +488,7 @@ include "nav.php";
       <div class="ban">
                 <img src="img/bans.webp" alt="">
                 <div class="banbody">
-                    <a href=""> 
+                    <a href="detapish.php"> 
                     <h3>ჩექმებიანი კატა კინოკავეა +</h3>
                     <p>ი. ბრამსი - საფორტეპიანო კონცერტი 
 ლ. ვ. ბეთჰოვენი - სიმფონია N3 
@@ -499,7 +505,7 @@ include "nav.php";
       <div class="ban">
                 <img src="img/bans.webp" alt="">
                 <div class="banbody">
-                    <a href=""> 
+                    <a href="detapish.php"> 
                     <h3>ჩექმებიანი კატა კინოკავეა +</h3>
                     <p>ი. ბრამსი - საფორტეპიანო კონცერტი 
 ლ. ვ. ბეთჰოვენი - სიმფონია N3 

@@ -1086,7 +1086,7 @@ footer .minh {
 .regis {
   padding: 0 25px;
 }
-.regis input {
+.regis input, .regis textarea {
   border: 0;
   border-radius: 7px;
   font-family: Got;
@@ -1095,9 +1095,12 @@ footer .minh {
   background-color: #F5F5F5;
   margin-bottom: 30px;
 }
-.regis input::placeholder {
+.regis input::placeholder, .regis textarea::placeholder {
   font-family: Got;
   font-weight: bold;
+}
+.regis textarea {
+  height: auto;
 }
 .regis button {
   color: #fff;
@@ -1202,6 +1205,251 @@ footer .minh {
 }
 .openregister button {
   background-color: #095646 !important;
+}
+
+.detals-header {
+  padding: 18px 0 0 0;
+  height: 60vh;
+}
+.detals-header .swiper {
+  height: 100%;
+}
+.detals-header .swiper .swiper-slide video, .detals-header .swiper .swiper-slide img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.breadcrumb {
+  padding: 15px 0;
+  font-family: Got;
+  font-weight: bold;
+}
+.breadcrumb a {
+  color: #1E0A0A;
+}
+.breadcrumb .active {
+  color: #FF4F2C;
+}
+
+.insidehead {
+  font-family: Got;
+  font-size: 23px;
+  color: #1E0A0A;
+  font-weight: bold;
+}
+
+.descr {
+  padding: 25px;
+  background-color: rgba(182, 182, 182, 0.1450980392);
+  font-family: Got;
+  margin-top: 10px;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #1E0A0A;
+  opacity: 0.8;
+}
+
+.ordersec {
+  padding: 20px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1098039216);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.ordersec h4 {
+  font-family: Got;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1E0A0A;
+}
+.ordersec .promos {
+  font-size: 13px;
+  font-family: Got;
+  background-color: rgba(201, 201, 201, 0.3019607843);
+  border-radius: 7px;
+  padding: 25px;
+  font-weight: bold;
+  color: rgba(30, 10, 10, 0.568627451);
+  margin-top: 30px;
+}
+
+.initem {
+  display: flex;
+  font-family: Got;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.initem i {
+  width: 35px;
+  margin-right: 15px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 10, 10, 0.1294117647);
+  border-radius: 3px;
+}
+
+.slider .swiper {
+  padding: 50px 0;
+}
+.slider .swiper .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+}
+.slider .swiper .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #F44336;
+}
+.slider img {
+  width: 100%;
+  height: 100px;
+  border-radius: 7px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.0862745098);
+  object-position: center;
+  object-fit: cover;
+}
+
+.swi button {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  color: #fff;
+  background-color: #FF4F2C;
+  width: 40px;
+  height: 40px;
+}
+
+.marchant h5 {
+  font-family: Got;
+  font-weight: bold;
+  font-size: 17px;
+  color: #FF4F2C;
+}
+.marchant p {
+  font-family: Got;
+  font-weight: bold;
+  color: #1E0A0A;
+  font-size: 14px;
+  margin: 15px 0 25px 0;
+  opacity: 0.6;
+}
+.marchant a {
+  color: #095646;
+  display: block;
+  font-family: Got;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.marchant a i {
+  position: relative;
+  top: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.1647058824);
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+.posters h3 {
+  font-family: Got;
+  font-weight: bold;
+  font-size: 18px;
+  color: #4F4F50;
+  padding: 7px 0;
+}
+.posters a {
+  color: #5260F7;
+  margin: 13px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detalspost-header {
+  margin: 15px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  background-color: rgba(9, 86, 70, 0.6196078431);
+  background-blend-mode: multiply;
+}
+.detalspost-header .breadcrumb {
+  margin-bottom: 0;
+}
+.detalspost-header .breadcrumb a {
+  color: #fff;
+}
+.detalspost-header .breadcrumb li::before {
+  color: rgba(255, 255, 255, 0.75);
+}
+.detalspost-header .insidehead {
+  color: #fff;
+  width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detalspost-header .infosec {
+  margin-top: 30px;
+}
+.detalspost-header .infosec button {
+  font-family: Got;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  border-radius: 9px;
+  margin-right: 12px;
+  padding: 13px 27px;
+}
+.detalspost-header .infosec .ord {
+  background-color: #FF4F2C;
+}
+.detalspost-header .infosec .times {
+  background-color: #095646;
+}
+.detalspost-header .infosec .save {
+  background-color: #095646;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 25px;
+  height: 25px;
+  box-shadow: none;
+  border-radius: 50%;
+  top: -12px;
+  background-color: #FF4F2C;
+  border: 0;
+}
+.noUi-horizontal .noUi-handle::before, .noUi-horizontal .noUi-handle::after {
+  display: none;
+}
+
+.noUi-connect {
+  background: #FF4F2C;
+}
+
+.noUi-target {
+  height: 3px;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(96, 125, 139, 0.2117647059);
+}
+
+.searchform input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #e4ecff;
 }
 
 @media (max-width: 1400px) {
