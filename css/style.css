@@ -1677,6 +1677,120 @@ footer .minh {
   font-weight: bold;
 }
 
+.steps {
+  padding: 20px 0;
+}
+.steps .base-step {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+.steps .base-step .step {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.steps .base-step .step .base-text {
+  text-align: center;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  border: 1px dashed #ccc;
+  color: #ccc;
+  padding-top: 22px;
+  font-size: 17px;
+  font-family: "Got";
+  font-weight: bold;
+}
+.steps .base-step .step .icons i {
+  color: #ccc;
+  font-size: 33px;
+}
+.steps .base-step .step.active .base-text {
+  border: 1px dashed #FF4F2C;
+  color: #FF4F2C;
+}
+.steps .base-step .step.active .icons i {
+  color: #FF4F2C;
+}
+
+.cartitem img {
+  border-radius: 7px 0 0 7px;
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+.cartitem h3 {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 18px;
+  color: #1E0A0A;
+}
+.cartitem p {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 17px;
+  color: #FF4F2C;
+}
+.cartitem small {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 13px;
+  color: #1E0A0A;
+  opacity: 0.6;
+}
+.cartitem .btrmcart {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9px;
+  border: 2px dashed rgba(255, 0, 0, 0.6392156863);
+  color: red;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+}
+
+.sum {
+  padding: 17px;
+  background-color: #FF4F2C;
+  border-radius: 7px;
+}
+.sum h3, .sum p {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+.sum p {
+  font-size: 18px;
+}
+.sum button {
+  background-color: #fff;
+  font-family: "Got";
+  color: #FF4F2C;
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.go-back {
+  color: #707070;
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 18px;
+}
+.go-back i {
+  font-size: 24px;
+  position: relative;
+  top: 4px;
+}
+
 @media (max-width: 1400px) {
   .products .prodcard .options {
     padding: 13px 10px;
@@ -1716,6 +1830,19 @@ footer .minh {
   }
 }
 @media (max-width: 992px) {
+  .steps .base-step {
+    flex-wrap: wrap;
+  }
+  .steps .base-step .step .icons i {
+    display: none;
+  }
+
+  .cartitem .btrmcart {
+    position: absolute;
+    top: 0%;
+    transform: translate(50%, 50%);
+  }
+
   .mobbar {
     display: flex;
   }

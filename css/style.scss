@@ -1914,4 +1914,133 @@ footer {
     }
 }
 
+.steps{
+ padding: 20px 0;
+.base-step{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    .step{
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+ 
+
+        .base-text{
+            text-align: center;
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            border: 1px dashed #ccc;
+            color: #ccc;
+            padding-top: 22px;
+            font-size: 17px;
+            font-family: 'Got';
+            font-weight: bold;
+        }
+        .icons{
+            i{
+                 color: #ccc;
+                 font-size: 33px;
+            }
+           
+        }
+
+        &.active{
+            .base-text{
+                border: 1px dashed $reds;
+                color: $reds;
+            }
+            .icons{
+               i{
+                color: $reds;
+               }
+            }
+        }
+    }
+ }
+}
+
+.cartitem{
+    img{
+        border-radius: 7px 0 0 7px;
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h3{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 18px;
+        color: $dark;
+    }
+    p{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 17px;
+        color: $reds;
+    }
+    small{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 13px;
+        color: $dark;
+        opacity: .6;
+    }
+
+    .btrmcart{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 9px;
+        border: 2px dashed #ff0000a3;
+        color: red;
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.sum{
+    padding: 17px;
+    background-color: #FF4F2C;
+    border-radius: 7px;
+    h3, p{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    button{
+      background-color: #fff;
+      font-family: 'Got';
+      color: $reds;
+      padding: 15px 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      border: 0;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+}
+
+.go-back{
+    color: #707070;
+    font-family: 'Got';
+    font-weight: bold;
+    font-size: 18px;
+    i{
+        font-size: 24px;
+        position: relative;
+        top: 4px;
+    }
+}
 @import "responsive"

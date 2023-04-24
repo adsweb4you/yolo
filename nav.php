@@ -35,7 +35,7 @@
         </li>
       
         <li class="nav-item catblock">
-          <a class="nav-link carts" href="#">
+          <a class="nav-link carts" href="cart.php">
             <i class="bi bi-cart3"></i>
             <span>5</span>
             <sub>0 ₾</sub>
