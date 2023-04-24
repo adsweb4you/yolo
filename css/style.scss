@@ -292,6 +292,46 @@ a {
 }
 
 .products {
+
+    &.bgsc{
+    background-color: #c9c9c9;
+
+    h2{
+        font-weight: bold;
+        font-family: Got;
+        margin-bottom: 15px;
+        color: #1f2020;
+        font-size: 21px;
+    }
+    }
+
+    &.serc{
+        .prodcard {
+            .options{
+                padding: 13px 12px;
+                .item{
+                    gap: 9px;
+                }
+                .moreops {
+                    .item{
+               
+                        padding: 13px 12px;
+                    }
+                }
+            }
+            .cardbody {
+                .bywith{
+                    margin-top: 15px;
+                    display: block;
+                    button{
+                        margin-top: 7px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
     .prodcard {
 
         .wish {
@@ -553,12 +593,69 @@ a {
     background-color: #F5F6FF;
     padding: 30px 0;
 
+    .logoline{
+        font-size: 19px;
+        font-weight: bold;
+        color: $dark;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+
     .ban {
         font-family: Got;
         font-weight: bold;
         border: 1px solid #c9c9c977;
+      
         background-color: #FFFFFF;
         border-radius: 12px;
+       .headline{
+          position: relative;
+
+          .time{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 12px;
+            color: #fff;
+            background-color: $reds;
+            padding: 2px 12px;
+            border-radius: 0 11px 11px 11px;
+        }
+        .cat{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            color: #fff;
+            background-color: $greens;
+            padding: 2px 12px;
+            border-radius:  11px 0 11px 11px;
+        }
+
+        .loc{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            cursor: pointer;
+            color: $reds;
+            left: 7px;
+            top: 7px;
+            border-radius: 50%;
+            @include center();
+
+        }
+
+       }
+        
 
         img {
             width: 100%;
@@ -1653,10 +1750,167 @@ footer {
 }
  
 .searchform{
-    input{
+    input, select{
         padding: 12px;
+        font-family: Got;
+        font-weight: bold;
         border-radius: 5px;
         border: 1px solid #e4ecff;
+    }
+
+    select{
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        padding-right: 7px;
+    }
+ 
+    font-family: Got;
+    padding: 12px 25px 25px 25px;
+    box-shadow: 0 4px 12px #cccccc3b;
+    border-radius: 11px;
+   h1{
+    font-weight: bold;
+    padding-bottom: 18px;
+    font-size: 21px;
+    border-bottom: 1px solid #cccccc5c;
+   }
+   h3{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 18px;
+   }
+   .f-c{
+    padding: 20px 0;
+   }
+   .category {
+    ul{
+        padding-left: 0;
+        list-style: none;
+        li{
+            font-family: Got;
+
+            padding: 7px 15px  ;
+            border-radius: 2px;
+            transition:  all .3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background-color: $reds;
+                color: #fff;
+            }
+        }
+    }
+   }
+}
+
+.sorts{
+    width: fit-content;
+    select{
+        padding: 12px;
+        font-family: Got;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid #e4ecff;
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.categ{
+    background: #0956460a;
+    padding: 25px 0;
+    margin: 30px 0;
+    .categs {
+
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #bcdded47;
+        border-radius: 6px;
+        background-color: #fff;
+
+        img{
+            width: 80px;
+            object-fit: contain;
+            height: 80px;
+        }
+        text-align: center;
+        h1{
+         margin-top: 20px;
+        font-size: 23px;
+        color: $greens;
+        font-family: Got;
+        font-weight: bold; 
+        }
+       
+    }
+}
+
+.namearr{
+  h4{
+    color: $greens;
+    font-family: Got;
+    font-weight: bold; 
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .swicont{
+    i{
+        cursor: pointer;
+    }
+}  
+}
+
+.calendar{
+       position: relative;
+
+       .datsc{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        @include center();
+        &.scleft{
+            left: 0;
+        }
+        &.sclright{
+            right: 0;
+        }
+    }
+}
+
+.calensec{
+    overflow: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding: 0 40px;
+ 
+ 
+    h2{
+        font-family: Got;
+        font-weight: bold; 
+        font-size: 21px;
+        margin-bottom: 15px;
+        color: $greens;
+    }
+    .allday{
+        display: flex;
+        gap: 25px;
+        .dayname{
+            text-align: center;
+            cursor: pointer;
+            p{
+                margin-bottom: 4px;
+                font-family: Got;
+                font-weight: bold; 
+            }
+        }
     }
 }
 

@@ -242,6 +242,33 @@ a {
   color: #095646 !important;
 }
 
+.products.bgsc {
+  background-color: #c9c9c9;
+}
+.products.bgsc h2 {
+  font-weight: bold;
+  font-family: Got;
+  margin-bottom: 15px;
+  color: #1f2020;
+  font-size: 21px;
+}
+.products.serc .prodcard .options {
+  padding: 13px 12px;
+}
+.products.serc .prodcard .options .item {
+  gap: 9px;
+}
+.products.serc .prodcard .options .moreops .item {
+  padding: 13px 12px;
+}
+.products.serc .prodcard .cardbody .bywith {
+  margin-top: 15px;
+  display: block;
+}
+.products.serc .prodcard .cardbody .bywith button {
+  margin-top: 7px;
+  width: 100%;
+}
 .products .prodcard {
   position: relative;
   margin-bottom: 35px;
@@ -458,12 +485,64 @@ a {
   background-color: #F5F6FF;
   padding: 30px 0;
 }
+.promobanner .logoline {
+  font-size: 19px;
+  font-weight: bold;
+  color: #1E0A0A;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.promobanner .logoline img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 .promobanner .ban {
   font-family: Got;
   font-weight: bold;
   border: 1px solid rgba(201, 201, 201, 0.4666666667);
   background-color: #FFFFFF;
   border-radius: 12px;
+}
+.promobanner .ban .headline {
+  position: relative;
+}
+.promobanner .ban .headline .time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  color: #fff;
+  background-color: #FF4F2C;
+  padding: 2px 12px;
+  border-radius: 0 11px 11px 11px;
+}
+.promobanner .ban .headline .cat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  color: #fff;
+  background-color: #095646;
+  padding: 2px 12px;
+  border-radius: 11px 0 11px 11px;
+}
+.promobanner .ban .headline .loc {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #FF4F2C;
+  left: 7px;
+  top: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .promobanner .ban img {
   width: 100%;
@@ -1446,10 +1525,156 @@ footer .minh {
   background-color: rgba(96, 125, 139, 0.2117647059);
 }
 
-.searchform input {
+.searchform {
+  font-family: Got;
+  padding: 12px 25px 25px 25px;
+  box-shadow: 0 4px 12px rgba(204, 204, 204, 0.231372549);
+  border-radius: 11px;
+}
+.searchform input, .searchform select {
   padding: 12px;
+  font-family: Got;
+  font-weight: bold;
   border-radius: 5px;
   border: 1px solid #e4ecff;
+}
+.searchform select {
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  padding-right: 7px;
+}
+.searchform h1 {
+  font-weight: bold;
+  padding-bottom: 18px;
+  font-size: 21px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3607843137);
+}
+.searchform h3 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+.searchform .f-c {
+  padding: 20px 0;
+}
+.searchform .category ul {
+  padding-left: 0;
+  list-style: none;
+}
+.searchform .category ul li {
+  font-family: Got;
+  padding: 7px 15px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.searchform .category ul li:hover {
+  background-color: #FF4F2C;
+  color: #fff;
+}
+
+.sorts {
+  width: fit-content;
+}
+.sorts select {
+  padding: 12px;
+  font-family: Got;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #e4ecff;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  margin-bottom: 30px;
+}
+
+.categ {
+  background: rgba(9, 86, 70, 0.0392156863);
+  padding: 25px 0;
+  margin: 30px 0;
+}
+.categ .categs {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgba(188, 221, 237, 0.2784313725);
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+}
+.categ .categs img {
+  width: 80px;
+  object-fit: contain;
+  height: 80px;
+}
+.categ .categs h1 {
+  margin-top: 20px;
+  font-size: 23px;
+  color: #095646;
+  font-family: Got;
+  font-weight: bold;
+}
+
+.namearr h4 {
+  color: #095646;
+  font-family: Got;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.namearr .swicont i {
+  cursor: pointer;
+}
+
+.calendar {
+  position: relative;
+}
+.calendar .datsc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar .datsc.scleft {
+  left: 0;
+}
+.calendar .datsc.sclright {
+  right: 0;
+}
+
+.calensec {
+  overflow: hidden;
+  display: flex;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 0 40px;
+}
+.calensec h2 {
+  font-family: Got;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 15px;
+  color: #095646;
+}
+.calensec .allday {
+  display: flex;
+  gap: 25px;
+}
+.calensec .allday .dayname {
+  text-align: center;
+  cursor: pointer;
+}
+.calensec .allday .dayname p {
+  margin-bottom: 4px;
+  font-family: Got;
+  font-weight: bold;
 }
 
 @media (max-width: 1400px) {

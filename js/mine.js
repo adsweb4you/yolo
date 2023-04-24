@@ -78,4 +78,16 @@
         $('.modal-content.register').addClass('d-none');
     });
 
+    $('.datsc').click(function (e) { 
+        e.preventDefault();
+        let cl = this.classList[1];
+        let scl =  $('.calensec').scrollLeft();
+        if (cl == 'scleft') {
+            $('.calensec').scrollLeft(scl - 100);
+        }else{
+            $('.calensec').scrollLeft(scl + 100);
+        }
+        
+    });
+
  });

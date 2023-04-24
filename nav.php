@@ -9,8 +9,8 @@
     <div class="banners d-flex">
  
         <ul class="switch">
-            <li><a href="">შთაბეჭდილებები</a> </li>
-            <li><a href="">აფიშა</a> </li>
+            <li><a href="index.php">შთაბეჭდილებები</a> </li>
+            <li><a href="poster.php">აფიშა</a> </li>
         </ul>
     </div>
 
