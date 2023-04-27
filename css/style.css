@@ -2195,6 +2195,17 @@ footer .minh {
     display: none;
   }
 
+  .mini-header ul {
+    gap: 3px;
+  }
+
+  .useraside .userinfo {
+    padding: 19px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
   .bywith {
     display: block !important;
   }
