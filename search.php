@@ -35,9 +35,12 @@ include "nav.php";
         <div class="row">
 
 
-            <div class="col-lg-3 my-5">
+            <div class="col-lg-3 my-2 my-lg-5">
                 <!-- form -->
 
+                <button class="openfill">ფილტრები <i class="ps-3 bi bi-funnel"></i></button>
+                <button class="closeform"><i class="bi bi-x-lg"></i></button>
+                <button class="mobsrch">ძებნა</button>
                 <form action="" class="searchform">
 
                     <h1>ფილტრაცია</h1>
@@ -85,7 +88,7 @@ include "nav.php";
 
                 <!-- endform -->
             </div>
-            <div class="col-lg-9 my-5">
+            <div class="col-lg-9 my-2 my-lg-5">
                 <!-- content -->
                 <div class="sorts">
                     <select name="" id="" class="form-control">

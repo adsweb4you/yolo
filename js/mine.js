@@ -90,4 +90,118 @@
         
     });
 
+    // next step
+ let step = 0;
+    $('.ord').click(function (e) { 
+        e.preventDefault();
+ 
+        if (step == 1) {
+            $(this).prop('disabled', true).css('opacity', '.6');
+
+            $('[data-st]').addClass('steped');
+        }
+       
+            $('.mine-cart').find('.show').removeClass('show').next().addClass('show');
+            $('.base-step').find('.active').next().addClass('active');
+ 
+ 
+            step++;
+    });
+
+    // ordertype
+
+    $('.packs').click(function (e) { 
+        e.preventDefault();
+        $('.packs.curr').removeClass('curr');
+        $(this).addClass('curr');
+    });
+
+        // addrtype
+
+        $('.addrs').click(function (e) { 
+            e.preventDefault();
+            $('.addrs.curr').removeClass('curr');
+            $(this).addClass('curr');
+        });
+
+    // change card img
+
+    $("#cards img").click(function (e) { 
+        e.preventDefault();
+        let img = $(this).data('img');
+        let name = $(this).data('name');
+        let price = $(this).data('price');
+
+        $("#cards img.act").removeClass('act');
+        $(this).addClass('act')
+
+        $('#cardimg').attr('src', img);
+
+        $('.cardname').text(name);
+        $("#crp").text(price + "₾");
+    });
+
+        // change package img
+
+        $("#packs img").click(function (e) { 
+            e.preventDefault();
+            let img = $(this).data('img');
+            let name = $(this).data('name');
+            let price = $(this).data('price');
+    
+            $("#packs img.act").removeClass('act');
+            $(this).addClass('act')
+
+            $('#pckimg').attr('src', img);
+    
+            $('.packname').text(name);
+            $("#pcp").text(price + "₾");
+        });
+
+        // cert type
+
+        $('.orderType').click(function (e) { 
+            e.preventDefault();
+            if ($(this).hasClass('dely')) {
+                $('.packing').css('display', 'flex')
+                $('.digitals').css('display', 'none')
+            }else{
+                $('.packing').css('display', 'none')
+                $('.digitals').css('display', 'flex')
+            }
+        });
+
+        $(document).on("click", '.steped', function (e) { 
+            e.preventDefault();
+            let stepopen = $(this).data('st');
+
+            $('.mine-cart .show').removeClass('show');
+            $("#"+stepopen).addClass('show')
+        });
+
+        $('.openfill').click(function (e) { 
+            e.preventDefault();
+            $('.searchform').addClass('opens');
+            $('.closeform').addClass('opens');
+            $('.mobsrch').addClass('opens');
+        });
+
+        $('.closeform, .mobsrch').click(function (e) { 
+            e.preventDefault();
+            $('.searchform').removeClass('opens');
+            $('.closeform').removeClass('opens');
+            $('.mobsrch').removeClass('opens');
+        });
+
+        $('.burg button').click(function (e) { 
+            e.preventDefault();
+            if ($(this).find('i').hasClass('bi-list')) {
+                $(this).find('i').removeClass('bi-list').addClass('bi-x-lg')
+            }else{
+                $(this).find('i').addClass('bi-list').removeClass('bi-x-lg')
+            }
+            
+            $('.usermenus').toggleClass('shoved')
+        });
+
  });

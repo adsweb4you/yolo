@@ -89,14 +89,14 @@
 <div class="mobbar">
   <a href="active.php" class="activation">აქტივაცია</a>
   <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-person-fill"></i></a>
-  <a href="" class="cart"> <i class="bi bi-cart3"></i></a>
+  <a href="cart.php" class="cart"> <i class="bi bi-cart3"></i></a>
   <a href=""><i class="bi bi-heart-fill"></i></a>
 </div>
 
 <div class="mobnavbar">
   <div class="indexpage">
-    <a href="">შთაბეჭდილებები</a>
-    <a href="">აფიშა</a>
+    <a href="index.php">შთაბეჭდილებები</a>
+    <a href="poster.php">აფიშა</a>
   </div>
   <div class="morepage">
     <a href="">YOLO-ს შესახებ</a>

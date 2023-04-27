@@ -940,6 +940,10 @@ footer .minh {
   background-color: #FF4F2C;
 }
 
+.steped {
+  cursor: pointer;
+}
+
 .useraside {
   background-color: #FFFFFF;
   border-radius: 12px;
@@ -1482,6 +1486,7 @@ footer .minh {
   margin-top: 30px;
 }
 .detalspost-header .infosec button {
+  margin-bottom: 15px;
   font-family: Got;
   font-weight: bold;
   color: #fff;
@@ -1791,6 +1796,169 @@ footer .minh {
   top: 4px;
 }
 
+.mine-cart .packhge {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 20px;
+  color: #1E0A0A;
+  margin-bottom: 30px;
+}
+.mine-cart .baseimgs {
+  height: 350px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 13px;
+}
+.mine-cart .col-lg-9 {
+  display: none;
+}
+.mine-cart .col-lg-9.show {
+  display: block;
+}
+.mine-cart .variant {
+  margin-top: 40px;
+}
+.mine-cart .variant img {
+  padding: 10px;
+  border-radius: 7px;
+  max-width: 100%;
+  border: 1px solid transparent;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.mine-cart .variant img.act {
+  border: 1px solid #eee;
+}
+
+.orderType {
+  position: relative;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 16px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.orderType.addrs {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderType.curr {
+  color: #FF4F2C;
+  border: 1px solid #FF4F2C;
+}
+.orderType.curr span {
+  display: flex;
+}
+.orderType span {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  font-size: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FF4F2C;
+}
+.orderType p, .orderType small {
+  font-family: "Got";
+  font-weight: bold;
+}
+.orderType p {
+  font-size: 16px;
+}
+.orderType small {
+  font-size: 11px;
+  opacity: 0.6;
+  position: relative;
+  bottom: 6px;
+}
+
+.packing h3, .packing p {
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 24px;
+  color: #1E0A0A;
+  margin-bottom: 0;
+}
+.packing small {
+  margin-bottom: 10px;
+  display: block;
+  opacity: 0.6;
+}
+
+.digitals {
+  display: none;
+}
+.digitals p {
+  background-color: rgba(9, 86, 71, 0.0588235294);
+  border-radius: 12px;
+  padding: 30px;
+  font-family: "Got";
+  font-weight: bold;
+  font-size: 16px;
+  color: #1E0A0A;
+}
+
+.openfill {
+  display: block;
+  width: 100%;
+  font-family: "Got";
+  font-weight: bold;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #095646;
+  color: #fff;
+  display: none;
+}
+
+.closeform {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99999;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: #ff2238;
+  color: #fff;
+  border-radius: 7px;
+}
+.closeform.opens {
+  display: block;
+}
+
+.mobsrch {
+  width: 82%;
+  position: fixed;
+  height: 57px;
+  border: 0;
+  background-color: #FF4F2C;
+  left: 50%;
+  font-family: "Got";
+  font-weight: bold;
+  transform: translateX(-50%);
+  border-radius: 7px;
+  bottom: 20px;
+  z-index: 99999;
+  color: #fff;
+  font-size: 21px;
+  display: none;
+}
+.mobsrch.opens {
+  display: block;
+}
+
 @media (max-width: 1400px) {
   .products .prodcard .options {
     padding: 13px 10px;
@@ -1835,6 +2003,60 @@ footer .minh {
   }
   .steps .base-step .step .icons i {
     display: none;
+  }
+
+  .openfill {
+    display: block;
+  }
+
+  .searchform {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.6s ease-in-out;
+  }
+  .searchform.opens {
+    transform: translateX(0);
+  }
+  .searchform .f-c {
+    margin-bottom: 80px;
+  }
+
+  .useraside .ic, .useraside .burg, .useraside .names {
+    width: 33.33333%;
+  }
+  .useraside .burg {
+    display: block;
+  }
+  .useraside .burg button {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(201, 201, 201, 0.4431372549);
+    border-radius: 50%;
+    color: #FF4F2C;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    margin: auto;
+  }
+
+  .base-form {
+    padding: 7px;
+  }
+
+  .usermenus {
+    display: none;
+  }
+  .usermenus.shoved {
+    display: block;
   }
 
   .cartitem .btrmcart {

@@ -1073,6 +1073,7 @@ footer {
         border-radius: 3px;
         padding: 13px 38px;
     }
+ 
     h4{
         font-weight: bold;
         font-size: 21px;
@@ -1100,6 +1101,9 @@ footer {
     
 }
  
+.steped{
+    cursor: pointer;
+}
 
 .useraside{
     background-color: #FFFFFF;
@@ -1702,6 +1706,7 @@ footer {
        
         margin-top: 30px;
         button{
+            margin-bottom: 15px;
             font-family: Got;
             font-weight: bold;
             color: #fff;
@@ -2011,7 +2016,9 @@ footer {
         font-weight: bold;
         font-size: 15px;
         color: #fff;
+        
     }
+  
 
     p{
         font-size: 18px;
@@ -2041,6 +2048,186 @@ footer {
         font-size: 24px;
         position: relative;
         top: 4px;
+    }
+}
+
+.mine-cart{
+
+    .packhge{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 20px;
+        color: $dark;
+        margin-bottom: 30px;
+    }
+
+    .baseimgs{
+        height: 350px;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 13px;
+    }
+
+    .col-lg-9{
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+
+    .variant{
+        margin-top: 40px;
+        img{
+            padding: 10px;
+            border-radius: 7px;
+            max-width: 100%;
+            border: 1px solid transparent;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &.act{
+                border: 1px solid #eee; 
+            }
+        }
+    }
+}
+
+
+
+.orderType{
+
+    &.addrs{
+     min-height: 82px;
+     @include center();
+    }
+
+    &.curr{
+        color: $reds;
+        border: 1px solid $reds;
+        span{
+            display: flex;
+        }
+    }
+
+    span{
+        display: none;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right:0;
+        top: 0;
+        transform: translate(50%, -50%);
+        font-size: 25px;
+        background-color: #fff;
+        border-radius: 50%;
+        justify-content: center;
+        align-items:center;
+        border: 2px solid $reds;
+    }
+    position: relative;
+    color: #707070;
+    border: 1px solid #707070;
+    padding: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+   p, small{
+    font-family: 'Got';
+    font-weight: bold;
+ 
+   
+   }
+   p{
+    font-size: 16px;
+   }
+
+   small{
+    font-size: 11px;
+    opacity: .6;
+    position: relative;
+    bottom: 6px;
+   }
+    
+}
+
+.packing{
+    h3,p{
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 24px;
+        color: $dark;
+        margin-bottom: 0;
+    }
+
+    small{
+        margin-bottom: 10px;
+        display: block;
+        opacity: .6;
+    }
+}
+
+.digitals{
+    display: none;
+
+    p{
+        background-color: #0956470f;
+        border-radius: 12px;
+        padding: 30px;
+        font-family: 'Got';
+        font-weight: bold;
+        font-size: 16px;
+        color: $dark;
+    }
+}
+
+.openfill{
+    display: block;
+    width: 100%;
+    font-family: 'Got';
+    font-weight: bold;
+    padding: 15px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: $greens;
+    color: #fff;
+    display: none;
+}
+
+.closeform{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: #ff2238;
+    color: #fff;
+    border-radius: 7px;
+    &.opens{
+        display: block;
+    }
+}
+
+.mobsrch{
+    width: 82%;
+    position: fixed;
+    height: 57px;
+    border: 0;
+    background-color: $reds;
+    left: 50%;
+    font-family: 'Got';
+    font-weight: bold;
+    transform: translateX(-50%);
+    border-radius: 7px;
+    bottom: 20px;
+    z-index: 99999;
+    color: #fff;
+    font-size: 21px;
+    display: none;
+    &.opens{
+        display: block;
     }
 }
 @import "responsive"

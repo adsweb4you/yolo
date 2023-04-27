@@ -57,6 +57,65 @@
     }
  } 
 
+
+ .openfill{ 
+    display: block;
+ }
+
+ .searchform{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100vh;
+ 
+    transform: translateX(100%);
+    transition: all .6s ease-in-out;
+    &.opens{
+        transform: translateX(0); 
+    }
+    .f-c{
+        margin-bottom: 80px;
+    }
+ }
+
+ .useraside{
+    .ic, .burg, .names{
+        width: 33.33333%;
+ 
+    }
+  .burg{
+    display: block;
+    button{
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(201, 201, 201, 0.4431372549);
+        border-radius: 50%;
+        color: #FF4F2C;
+        width: 64px;
+        height: 64px;
+        border: 0;
+        margin: auto;
+    }
+  }
+ }
+
+ .base-form{
+    padding: 7px;
+ }
+
+ .usermenus{
+    display: none;
+    &.shoved{
+        display: block;
+    }
+}
+
  .cartitem {
 .btrmcart {
     position: absolute;

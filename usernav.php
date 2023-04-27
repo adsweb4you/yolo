@@ -9,6 +9,9 @@
      გიორგი
     </p>
     </div>
+    <div class="burg">
+        <button ><i class="bi bi-list"></i></button>
+    </div>
 </div>
 
 <!-- list -->
